@@ -1,0 +1,6 @@
+{
+  "name": "Farming Calendar",
+  "description": "Bilingual agricultural planning and agribusiness management platform for crops, farm operations, harvest forecasting, buyer orders, and logistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,339 @@
+{
+  "_migrations": [
+    {
+      "id": 1,
+      "name": "001_initial_schema.sql",
+      "applied_at": "2026-10-09T09:44:42.461Z"
+    },
+    {
+      "id": 2,
+      "name": "002_security_and_tenancy.sql",
+      "applied_at": "2026-10-09T09:44:42.462Z"
+    },
+    {
+      "id": 3,
+      "name": "003_dev_seed.sql",
+      "applied_at": "2026-10-09T09:44:42.463Z"
+    },
+    {
+      "id": 4,
+      "name": "004_normal_calendar.sql",
+      "applied_at": "2026-10-09T09:58:03.236Z"
+    },
+    {
+      "id": 5,
+      "name": "005_agricultural_core.sql",
+      "applied_at": "2026-10-12T07:12:42.799Z"
+    },
+    {
+      "id": 6,
+      "name": "006_commercial_management.sql",
+      "applied_at": "2026-10-16T13:59:17.523Z"
+    },
+    {
+      "id": 7,
+      "name": "007_processing_and_inventory.sql",
+      "applied_at": "2026-10-16T14:11:40.327Z"
+    },
+    {
+      "id": 8,
+      "name": "008_logistics_and_export.sql",
+      "applied_at": "2026-10-17T10:16:22.360Z"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "2ec25b20-1319-4eaf-8330-8764eec40cfe",
+      "name": "EAMS SARL",
+      "slug": "eams-sarl",
+      "country_code": "GN",
+      "org_type": "COOPERATIVE",
+      "primary_currency": "GNF",
+      "timezone": "Africa/Conakry",
+      "contact_email": "dkamdkamcbg@gmail.com",
+      "is_active": true,
+      "created_at": "2026-11-05T12:50:27.552Z",
+      "updated_at": "2026-11-05T13:10:00.000Z",
+      "is_deleted": false
+    }
+  ],
+  "users": [
+    {
+      "id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "email": "dkamdkamcbg@gmail.com",
+      "password_hash": "$2b$10$GsGI97HqplY9DB8USrwSlOUctVCjX49Ioe9qqtgt33NXrz32iS4pW",
+      "full_name": "DKAM",
+      "preferred_language": "fr",
+      "is_active": true,
+      "is_platform_owner": false,
+      "created_at": "2026-11-05T12:50:27.552Z",
+      "updated_at": "2026-11-05T13:10:00.000Z"
+    }
+  ],
+  "organization_memberships": [
+    {
+      "id": "259c656f-bc30-4479-9fa4-f0e3b9048ed2",
+      "organization_id": "2ec25b20-1319-4eaf-8330-8764eec40cfe",
+      "user_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "role": "ORG_ADMIN",
+      "is_primary": true,
+      "created_at": "2026-11-05T12:50:27.552Z"
+    }
+  ],
+  "farms": [],
+  "plots": [],
+  "audit_logs": [
+    {
+      "id": "42b25b3d-a0b3-486a-8222-860df6e3d0ea",
+      "organization_id": "2ec25b20-1319-4eaf-8330-8764eec40cfe",
+      "user_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "user_email": "dkamdkamcbg@gmail.com",
+      "user_role": "ORG_ADMIN",
+      "action": "LOGIN_SUCCESS",
+      "target_entity": "AUTH",
+      "target_entity_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "details_json": {},
+      "created_at": "2026-11-05T13:10:17.316Z"
+    },
+    {
+      "id": "c27ff742-d2ed-49ea-a958-ad8d2a486bdc",
+      "organization_id": null,
+      "user_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "user_email": "dkamdkamcbg@gmail.com",
+      "user_role": null,
+      "action": "LOGIN_FAILED",
+      "target_entity": "AUTH",
+      "target_entity_id": null,
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "details_json": {
+        "reason": "Password mismatch"
+      },
+      "created_at": "2026-11-05T12:58:18.264Z"
+    },
+    {
+      "id": "e79a641a-eee1-42e7-bbce-32912a7e9c62",
+      "organization_id": "2ec25b20-1319-4eaf-8330-8764eec40cfe",
+      "user_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "user_email": "dkamdkamcbg@gmail.com",
+      "user_role": "ORG_ADMIN",
+      "action": "LOGIN_SUCCESS",
+      "target_entity": "AUTH",
+      "target_entity_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "details_json": {},
+      "created_at": "2026-11-05T12:50:32.108Z"
+    },
+    {
+      "id": "ab377a03-9d19-46fe-a30b-88b61bbbb381",
+      "organization_id": "2ec25b20-1319-4eaf-8330-8764eec40cfe",
+      "user_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "user_email": "dkamdkamcbg@gmail.com",
+      "user_role": "ORG_ADMIN",
+      "action": "USER_REGISTERED",
+      "target_entity": "USER",
+      "target_entity_id": "69e2a44e-d9f8-4d70-a744-aa06a7d2a922",
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "details_json": {
+        "organizationId": "2ec25b20-1319-4eaf-8330-8764eec40cfe",
+        "organizationName": "Guinée Agro Enterprise"
+      },
+      "created_at": "2026-11-05T12:50:27.675Z"
+    },
+    {
+      "id": "9db70b33-ccb7-4a4f-8968-a272d535c5cf",
+      "organization_id": null,
+      "user_id": null,
+      "user_email": "dkamdkamcbg@gmail.com",
+      "user_role": null,
+      "action": "LOGIN_FAILED",
+      "target_entity": "AUTH",
+      "target_entity_id": null,
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "details_json": {
+        "reason": "User not found or inactive"
+      },
+      "created_at": "2026-11-05T12:48:24.192Z"
+    },
+    {
+      "id": "8917f90b-5dbb-4de9-b430-6820e9458682",
+      "organization_id": null,
+      "user_id": null,
+      "user_email": "dkamdkamcbg@gmail.com",
+      "user_role": null,
+      "action": "LOGIN_FAILED",
+      "target_entity": "AUTH",
+      "target_entity_id": null,
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "details_json": {
+        "reason": "User not found or inactive"
+      },
+      "created_at": "2026-11-05T12:48:00.223Z"
+    },
+    {
+      "id": "39f87d7e-dfa5-4ebb-b69b-8d4d2fed5fca",
+      "organization_id": null,
+      "user_id": null,
+      "user_email": "dkamdkamcbg@gmail.com",
+      "user_role": null,
+      "action": "LOGIN_FAILED",
+      "target_entity": "AUTH",
+      "target_entity_id": null,
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "details_json": {
+        "reason": "User not found or inactive"
+      },
+      "created_at": "2026-11-05T12:46:45.630Z"
+    }
+  ],
+  "normal_calendar_events": [],
+  "crops": [],
+  "crop_varieties": [],
+  "agricultural_seasons": [
+    {
+      "id": "season-2026-seche",
+      "name": "Saison Sèche 2026 (Grand Nord & Basse-Guinée)",
+      "code": "SEASON-DRY-2026",
+      "startDate": "2025-11-01",
+      "endDate": "2026-04-30",
+      "description": "Période sèche sous irrigation goutte-à-goutte et submersion contrôlée",
+      "isDefault": true,
+      "isActive": true
+    },
+    {
+      "id": "season-2026-pluies",
+      "name": "Saison des Pluies 2026 (Hivernage)",
+      "code": "SEASON-RAIN-2026",
+      "startDate": "2026-05-01",
+      "endDate": "2026-10-31",
+      "description": "Hivernage à forte pluviométrie côtière et contreforts du Fouta-Djalon",
+      "isDefault": false,
+      "isActive": true
+    }
+  ],
+  "agricultural_methods": [
+    {
+      "id": "meth-plant-nursery",
+      "name": "Pépinière ombragée puis repiquage manuel",
+      "category": "PLANTING",
+      "description": "Semis en clayettes ou planches maraîchères sous ombrière puis repiquage en poquets",
+      "laborIntensity": "HIGH",
+      "isActive": true
+    },
+    {
+      "id": "meth-plant-direct",
+      "name": "Semis direct en ligne mécanisé / semi-mécanisé",
+      "category": "PLANTING",
+      "description": "Semoir à disques ou poquets directs après labour profond",
+      "laborIntensity": "MEDIUM",
+      "isActive": true
+    },
+    {
+      "id": "meth-plant-cuttings",
+      "name": "Bouturage sur billons ou billons transversaux",
+      "category": "PLANTING",
+      "description": "Boutures saines de 20-30 cm inclinées à 45° pour cultures à tubercules",
+      "laborIntensity": "MEDIUM",
+      "isActive": true
+    },
+    {
+      "id": "meth-irrig-drip",
+      "name": "Micro-irrigation goutte-à-goutte basse pression",
+      "category": "IRRIGATION",
+      "description": "Lignes de goutteurs autorégulants espacés de 20-30 cm",
+      "laborIntensity": "LOW",
+      "isActive": true
+    },
+    {
+      "id": "meth-protect-bio",
+      "name": "Lutte intégrée et biocontrôle biologique",
+      "category": "CROP_PROTECTION",
+      "description": "Extraits végétaux naturels (Neem, savon noir) et auxiliaires biologiques",
+      "laborIntensity": "MEDIUM",
+      "isActive": true
+    }
+  ],
+  "suppliers": [],
+  "agricultural_inputs": [],
+  "agricultural_equipment": [],
+  "field_teams": [],
+  "production_campaigns": [],
+  "campaign_operations": [],
+  "campaign_harvests": [],
+  "buyers": [],
+  "commercial_orders": [],
+  "order_lines": [],
+  "supply_reservations": [],
+  "inventory_items": [],
+  "stock_movements": [],
+  "processing_recipes": [],
+  "processing_batches": [],
+  "quality_inspections": [],
+  "shipments": [],
+  "budgets": [],
+  "exchange_rates": [
+    {
+      "id": "fx-eur-gnf",
+      "fromCurrency": "EUR",
+      "toCurrency": "GNF",
+      "rate": 9350,
+      "effectiveDate": "2026-10-15",
+      "source": "Banque Centrale de la République de Guinée (BCRG) - Cours Indicatif Officiel",
+      "isManualOverride": false
+    },
+    {
+      "id": "fx-gnf-eur",
+      "fromCurrency": "GNF",
+      "toCurrency": "EUR",
+      "rate": 0.00010695,
+      "effectiveDate": "2026-10-15",
+      "source": "Banque Centrale de la République de Guinée (BCRG) - Cours Indicatif Officiel",
+      "isManualOverride": false
+    },
+    {
+      "id": "fx-usd-gnf",
+      "fromCurrency": "USD",
+      "toCurrency": "GNF",
+      "rate": 8600,
+      "effectiveDate": "2026-10-15",
+      "source": "Banque Centrale de la République de Guinée (BCRG) - Cours Indicatif Officiel",
+      "isManualOverride": false
+    },
+    {
+      "id": "fx-gnf-usd",
+      "fromCurrency": "GNF",
+      "toCurrency": "USD",
+      "rate": 0.00011628,
+      "effectiveDate": "2026-10-15",
+      "source": "Banque Centrale de la République de Guinée (BCRG) - Cours Indicatif Officiel",
+      "isManualOverride": false
+    },
+    {
+      "id": "fx-xof-gnf",
+      "fromCurrency": "XOF",
+      "toCurrency": "GNF",
+      "rate": 14.25,
+      "effectiveDate": "2026-10-15",
+      "source": "BCEAO / BCRG Zone Monétaire Ouest-Africaine (ZMAO)",
+      "isManualOverride": false
+    },
+    {
+      "id": "fx-gnf-xof",
+      "fromCurrency": "GNF",
+      "toCurrency": "XOF",
+      "rate": 0.070175,
+      "effectiveDate": "2026-10-15",
+      "source": "BCEAO / BCRG Zone Monétaire Ouest-Africaine (ZMAO)",
+      "isManualOverride": false
+    }
+  ],
+  "investment_projects": [],
+  "organization_preferences": []
+}

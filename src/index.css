@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Primary Agricultural Enterprise Palette */
+    --color-forest: #173F35;
+    --color-agri: #2F7D4A;
+    --color-growth: #77A96B;
+    --color-muted-olive: #858B65;
+    --color-metallic-gold: #C6A04A;
+    --color-light-gold: #E4C979;
+    --color-warm-ivory: #F7F5ED;
+    --color-charcoal: #202924;
+    --color-secondary-text: #66736B;
+    --color-border: #E1E7E0;
+
+    /* Light Mode Tokens */
+    --bg-app: #F7F8F4;
+    --bg-surface: #FFFFFF;
+    --bg-surface-elevated: #FFFFFF;
+    --bg-subtle: #F0F4EE;
+    --text-primary: #202924;
+    --text-secondary: #66736B;
+    --text-muted: #8A988F;
+    --border-subtle: #E1E7E0;
+    --border-strong: #CDD6CC;
+
+    /* Functional Accents */
+    --accent-success: #2F7D4A;
+    --accent-warning: #D97706;
+    --accent-error: #DC2626;
+    --accent-info: #0284C7;
+  }
+
+  .dark {
+    /* Dark Forest Mode Tokens */
+    --bg-app: #0E1612;
+    --bg-surface: #14201A;
+    --bg-surface-elevated: #1B2B23;
+    --bg-subtle: #18261F;
+    --text-primary: #EEF4F0;
+    --text-secondary: #9EB0A5;
+    --text-muted: #728277;
+    --border-subtle: #24352C;
+    --border-strong: #334A3E;
+
+    --accent-success: #3BA360;
+    --accent-warning: #F59E0B;
+    --accent-error: #EF4444;
+    --accent-info: #38BDF8;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Scrollbar for Enterprise Density */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(102, 115, 107, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 115, 107, 0.45);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
